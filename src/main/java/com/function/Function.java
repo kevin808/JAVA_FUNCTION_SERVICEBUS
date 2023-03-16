@@ -60,7 +60,7 @@ public class Function {
                 sender.sendMessages(messageBatch);
 
                 // Close the sender.
-                // sender.close();
+                sender.close();
             } catch (Exception e) {
                     context.getLogger().warning(String.format(e.getMessage()));
             }
